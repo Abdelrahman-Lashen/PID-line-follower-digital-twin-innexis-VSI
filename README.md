@@ -162,9 +162,9 @@ Time synchronization is managed by `vsiSim` using the VSI Route backplane.
 
 ## 👨‍💻 author
 
-Abdelrahman Mohamed Abdelhamid Lashen
-Course: Digital Twin "Siemens"
-Supervisors : Dr. Mohamed Abdelsalam & Dr. Mohamed El-Leithy
+- Abdelrahman Mohamed Abdelhamid Lashen
+- Course: Digital Twin "Siemens"
+- Supervisors : Dr. Mohamed Abdelsalam & Dr. Mohamed El-Leithy
 
 ---
 
