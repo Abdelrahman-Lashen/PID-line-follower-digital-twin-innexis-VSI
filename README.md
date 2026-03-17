@@ -171,7 +171,6 @@ Time synchronization is managed by `vsiSim` using the VSI Route backplane.
 ## 📄 References
 
 - *Innexis™ Virtual System Interconnect — Digital Twin Builder and Simulator User Guide*, Siemens, v2026.1
-- Project specification: `DT_PROJECT.pdf`
 
 ---
 
