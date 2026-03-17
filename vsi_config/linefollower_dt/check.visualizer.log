@@ -1,0 +1,13 @@
+Script started on 2026-03-16 19:51:33+00:00 [TERM="xterm" TTY="/dev/pts/7" COLUMNS="80" LINES="24"]
+python3 .//src/visualizer/visualizer.py --domain="AF_UNIX" --server-url="localhost"
+=== Visualizer started ===
++=+ XLVIP-INFO: XlTlmMessageLayer::connectToServer():
++=+    Connecting clientId=':remoteSession2' to 'server@localhost' ...
+error(104): DCBlockingRecv(): Error calling recv(): Connection reset by peer
+DC-FATAL: DcMessageManager::messageReceive(): Error on :remoteSession2 receive call - receiving packet directly from socket [errno=104 perror()='Connection reset by peer' line #448 of 'protected/DcMessageManager.h']
+
+RAWC-API FATAL: Program aborting. [line #255] of 'protected/RawcTlmApi.cxx'
+error(32): DCBlockingSend(): Error calling send(): Broken pipe
+terminate called after throwing an instance of 'std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >'
+Killed
+make: *** [Makefile.client2:31: sim] Error 137

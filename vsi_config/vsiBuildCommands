@@ -1,0 +1,35 @@
+add component -type Python -name simulator
+add component -type Python -name controller
+add component -type Python -name visualizer
+add port -componentName simulator -name simPort -gateway python2DtCan
+add port -componentName controller -name ctrlPort -gateway python2DtCan
+add port -componentName visualizer -name vizPort -gateway python2DtCan
+define componentSignals -componentName simulator -signals [robot_x:double:output,robot_y:double:output,robot_theta:double:output,path_tx:double:output,path_ty:double:output,path_x:double:output,path_y:double:output]
+define componentSignals -componentName controller -signals [robot_x:double:input,robot_y:double:input,robot_theta:double:input,path_tx:double:input,path_ty:double:input,path_x:double:input,path_y:double:input,omega_cmd:double:output]
+define componentSignals -componentName visualizer -signals [robot_x:double:input,robot_y:double:input,robot_theta:double:input,path_x:double:input,path_y:double:input,omega_cmd:double:input]
+define frame -componentName simulator -portName simPort -id 10 -signals [robot_x:0:64]
+define frame -componentName simulator -portName simPort -id 11 -signals [robot_y:0:64]
+define frame -componentName simulator -portName simPort -id 12 -signals [robot_theta:0:64]
+define frame -componentName simulator -portName simPort -id 13 -signals [path_tx:0:64]
+define frame -componentName simulator -portName simPort -id 14 -signals [path_ty:0:64]
+define frame -componentName simulator -portName simPort -id 15 -signals [path_x:0:64]
+define frame -componentName simulator -portName simPort -id 16 -signals [path_y:0:64]
+define frame -componentName controller -portName ctrlPort -id 10 -signals [robot_x:0:64]
+define frame -componentName controller -portName ctrlPort -id 11 -signals [robot_y:0:64]
+define frame -componentName controller -portName ctrlPort -id 12 -signals [robot_theta:0:64]
+define frame -componentName controller -portName ctrlPort -id 13 -signals [path_tx:0:64]
+define frame -componentName controller -portName ctrlPort -id 14 -signals [path_ty:0:64]
+define frame -componentName controller -portName ctrlPort -id 15 -signals [path_x:0:64]
+define frame -componentName controller -portName ctrlPort -id 16 -signals [path_y:0:64]
+define frame -componentName controller -portName ctrlPort -id 20 -signals [omega_cmd:0:64]
+define frame -componentName visualizer -portName vizPort -id 10 -signals [robot_x:0:64]
+define frame -componentName visualizer -portName vizPort -id 11 -signals [robot_y:0:64]
+define frame -componentName visualizer -portName vizPort -id 12 -signals [robot_theta:0:64]
+define frame -componentName visualizer -portName vizPort -id 15 -signals [path_x:0:64]
+define frame -componentName visualizer -portName vizPort -id 16 -signals [path_y:0:64]
+define frame -componentName visualizer -portName vizPort -id 20 -signals [omega_cmd:0:64]
+set totalSimTime 30 s
+set simulationStep 0.01 s
+set workspaceDir .
+set digitalTwinName linefollower_dt
+generate

@@ -1,0 +1,114 @@
+Script started on 2026-03-16 19:51:32+00:00 [TERM="xterm" TTY="/dev/pts/5" COLUMNS="80" LINES="24"]
+python3 .//src/controller/controller.py --domain="AF_UNIX" --server-url="localhost"
+=== Controller started ===
+    PID: Kp=2.0  Ki=0.1  Kd=0.5  alpha=0.5
++=+ XLVIP-INFO: XlTlmMessageLayer::connectToServer():
++=+    Connecting clientId=':remoteSession1' to 'server@localhost' ...
++=+    Successfully connected 'client :remoteSession1' to 'server@localhost'
++=+    Negotiated socket connection configuration
++=+        Use socket manager thread=FALSE
++=+        Use TCP_NODELAY=TRUE
++=+        Use UDP=FALSE
++=+ XLVIP-INFO: XlTlmMessageLayer::connect():
++=+    Successfully connected this remote client conduit into the TLM fabric server:
++=+        clientId=:remoteSession1
++=+        conduitId=:timeServerConduit1
+           localClientConduitHandle=0x5d832eaca5e8
+           remoteServerProxyConduitHandle=0x17dc2110
++=+ XLVIP-INFO: XlTlmMessageLayer::connect():
++=+    Successfully connected this remote client conduit into the TLM fabric server:
++=+        clientId=:remoteSession1
++=+        conduitId=:resetServerConduit1
+           localClientConduitHandle=0x5d832ead1f58
+           remoteServerProxyConduitHandle=0x17dbe320
++=+ XLVIP-INFO: XlTlmMessageLayer::connect():
++=+    Successfully connected this remote client conduit into the TLM fabric server:
++=+        clientId=:remoteSession1
++=+        conduitId=:txConfigPort1
+           localClientConduitHandle=0x5d832e9c3780
+           remoteServerProxyConduitHandle=0x17dd0a90
++=+ XLVIP-INFO: XlTlmMessageLayer::connect():
++=+    Successfully connected this remote client conduit into the TLM fabric server:
++=+        clientId=:remoteSession1
++=+        conduitId=:rxConfigPort1
+           localClientConduitHandle=0x5d832eac6f60
+           remoteServerProxyConduitHandle=0x17dcce90
++=+ INFO: ... successfully connected to TLM FabricServer !
++=+ XLVIP-INFO: XlTlmMessageLayer::connect():
++=+    Successfully connected this remote client conduit into the TLM fabric server:
++=+        clientId=:remoteSession1
++=+        conduitId=:txCanFrameConduit1
+           localClientConduitHandle=0x5d832eaca700
+           remoteServerProxyConduitHandle=0x17dc6930
++=+ XLVIP-INFO: XlTlmMessageLayer::connect():
++=+    Successfully connected this remote client conduit into the TLM fabric server:
++=+        clientId=:remoteSession1
++=+        conduitId=:rxCanFrameConduit1
+           localClientConduitHandle=0x5d832ead6d10
+           remoteServerProxyConduitHandle=0x17dc57c0
+  t=  0.5s | rx=  0.46m | ry= -1.333m | omega= 1.401 | e_lat=1.333m
+  t=  1.0s | rx=  0.76m | ry= -0.938m | omega= 0.337 | e_lat=0.938m
+  t=  1.5s | rx=  0.98m | ry= -0.487m | omega=-0.366 | e_lat=0.487m
+  t=  2.0s | rx=  1.26m | ry= -0.077m | omega=-0.735 | e_lat=0.077m
+  t=  2.5s | rx=  1.67m | ry=  0.209m | omega=-0.770 | e_lat=0.209m
+  t=  3.0s | rx=  2.15m | ry=  0.327m | omega=-0.565 | e_lat=0.327m
+  t=  3.5s | rx=  2.65m | ry=  0.304m | omega=-0.280 | e_lat=0.304m
+  t=  4.0s | rx=  3.14m | ry=  0.208m | omega=-0.038 | e_lat=0.208m
+  t=  4.5s | rx=  3.63m | ry=  0.099m | omega= 0.111 | e_lat=0.099m
+  t=  5.0s | rx=  4.12m | ry=  0.014m | omega= 0.163 | e_lat=0.014m
+  t=  5.5s | rx=  4.62m | ry= -0.032m | omega= 0.144 | e_lat=0.032m
+  t=  6.0s | rx=  5.12m | ry= -0.043m | omega= 0.091 | e_lat=0.043m
+  t=  6.5s | rx=  5.62m | ry= -0.031m | omega= 0.034 | e_lat=0.031m
+  t=  7.0s | rx=  6.12m | ry= -0.009m | omega=-0.008 | e_lat=0.009m
+  t=  7.5s | rx=  6.61m | ry=  0.011m | omega=-0.030 | e_lat=0.011m
+  t=  8.0s | rx=  7.11m | ry=  0.025m | omega=-0.033 | e_lat=0.025m
+  t=  8.5s | rx=  7.61m | ry=  0.030m | omega=-0.025 | e_lat=0.030m
+  t=  9.0s | rx=  8.11m | ry=  0.029m | omega=-0.013 | e_lat=0.029m
+  t=  9.5s | rx=  8.61m | ry=  0.025m | omega=-0.002 | e_lat=0.025m
+  t= 10.0s | rx=  9.11m | ry=  0.020m | omega= 0.004 | e_lat=0.020m
+  t= 10.5s | rx=  9.61m | ry=  0.016m | omega= 0.007 | e_lat=0.016m
+  t= 11.0s | rx= 10.11m | ry=  0.013m | omega= 0.006 | e_lat=0.013m
+  t= 11.5s | rx= 10.61m | ry=  0.012m | omega= 0.004 | e_lat=0.012m
+  t= 12.0s | rx= 11.11m | ry=  0.013m | omega= 0.002 | e_lat=0.013m
+  t= 12.5s | rx= 11.61m | ry=  0.013m | omega=-0.000 | e_lat=0.013m
+  t= 13.0s | rx= 12.11m | ry=  0.014m | omega=-0.001 | e_lat=0.014m
+  t= 13.5s | rx= 12.61m | ry=  0.014m | omega=-0.001 | e_lat=0.014m
+  t= 14.0s | rx= 13.11m | ry=  0.014m | omega=-0.001 | e_lat=0.014m
+  t= 14.5s | rx= 13.61m | ry=  0.014m | omega=-0.001 | e_lat=0.014m
+  t= 15.0s | rx= 14.11m | ry=  0.013m | omega=-0.000 | e_lat=0.013m
+  t= 15.5s | rx= 14.61m | ry=  0.013m | omega= 0.000 | e_lat=0.013m
+  t= 16.0s | rx= 15.11m | ry=  0.012m | omega= 0.000 | e_lat=0.012m
+  t= 16.5s | rx= 15.61m | ry=  0.012m | omega= 0.000 | e_lat=0.012m
+  t= 17.0s | rx= 16.11m | ry=  0.011m | omega= 0.000 | e_lat=0.011m
+  t= 17.5s | rx= 16.61m | ry=  0.011m | omega= 0.000 | e_lat=0.011m
+  t= 18.0s | rx= 17.11m | ry=  0.011m | omega= 0.000 | e_lat=0.011m
+  t= 18.5s | rx= 17.61m | ry=  0.011m | omega=-0.000 | e_lat=0.011m
+  t= 19.0s | rx= 18.11m | ry=  0.010m | omega=-0.000 | e_lat=0.010m
+  t= 19.5s | rx= 18.61m | ry=  0.010m | omega=-0.000 | e_lat=0.010m
+  t= 20.0s | rx= 19.11m | ry=  0.010m | omega=-0.000 | e_lat=0.010m
+  t= 20.5s | rx= 19.61m | ry=  0.010m | omega= 0.000 | e_lat=0.010m
+  t= 21.0s | rx= 20.11m | ry=  0.009m | omega= 0.000 | e_lat=0.009m
+  t= 21.5s | rx= 20.61m | ry=  0.009m | omega= 0.000 | e_lat=0.009m
+  t= 22.0s | rx= 21.11m | ry=  0.009m | omega= 0.000 | e_lat=0.009m
+  t= 22.5s | rx= 21.61m | ry=  0.009m | omega= 0.000 | e_lat=0.009m
+  t= 23.0s | rx= 22.11m | ry=  0.008m | omega= 0.000 | e_lat=0.008m
+  t= 23.5s | rx= 22.61m | ry=  0.008m | omega= 0.000 | e_lat=0.008m
+  t= 24.0s | rx= 23.11m | ry=  0.008m | omega= 0.000 | e_lat=0.008m
+  t= 24.5s | rx= 23.61m | ry=  0.008m | omega= 0.000 | e_lat=0.008m
+  t= 25.0s | rx= 24.11m | ry=  0.008m | omega= 0.000 | e_lat=0.008m
+  t= 25.5s | rx= 24.61m | ry=  0.007m | omega= 0.000 | e_lat=0.007m
+  t= 26.0s | rx= 25.11m | ry=  0.007m | omega= 0.000 | e_lat=0.007m
+  t= 26.5s | rx= 25.61m | ry=  0.007m | omega= 0.000 | e_lat=0.007m
+  t= 27.0s | rx= 26.11m | ry=  0.007m | omega= 0.000 | e_lat=0.007m
+  t= 27.5s | rx= 26.61m | ry=  0.007m | omega= 0.000 | e_lat=0.007m
+  t= 28.0s | rx= 27.11m | ry=  0.007m | omega= 0.000 | e_lat=0.007m
+  t= 28.5s | rx= 27.61m | ry=  0.006m | omega= 0.000 | e_lat=0.006m
+  t= 29.0s | rx= 28.11m | ry=  0.006m | omega= 0.000 | e_lat=0.006m
+  t= 29.5s | rx= 28.61m | ry=  0.006m | omega= 0.000 | e_lat=0.006m
+  t= 30.0s | rx= 29.11m | ry=  0.006m | omega= 0.000 | e_lat=0.006m
+=== Controller finished ===
++=+ XLVIP-INFO: XlTlmMessageLayer::disconnectFromServer():
++=+    Disconnecting this remote client from TLM fabric server:
++=+        clientId=:remoteSession1
+
+Script done on 2026-03-16 19:52:32+00:00 [COMMAND_EXIT_CODE="0"]
